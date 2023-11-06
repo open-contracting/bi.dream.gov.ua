@@ -1,0 +1,21 @@
+code,name_ua,name_en
+internationalOrganization,Міжнародні організації,International Organization
+localBudget,Місцевий бюджет (за виключенням субвенцій з державного бюджету),Local Budget
+stateCentralBudget,Інші кошти загального фонду державного бюджету,State Central Budget
+united24,Фонд відновлення майна та зруйнованої інфраструктури (United24),United 24
+liquidationFund ,Фонд ліквідації наслідків збройної агресії (державний бюджет),Liquidation Fund
+stateReserve,Резервний фонд державного бюджету,State Reserve
+stateSubsidies,Субвенції з державного бюджету місцевим бюджетам,State Subsidies
+stateSpecialBudget,Інші кошти спеціального фонду державного бюджету,State Special Budget
+naturalPerson,Фізичні особи,Natural Person
+legalEntity,Юридичні особи,Legal Entity
+abroadState,Іноземні держави (органи влади),Abroad State
+abroadEntity,Іноземні держави (юридичні особи),Abroad Entity
+abroadPerson,Іноземні держави (фізичні особи),Abroad Person
+bilateralSupport,Кошти країн,Billateral Support
+centralBudget,Державний бюджет,Central Budget
+charityFunds,Благодійні фонди,Charity Funds
+donorFunds,Донорські фонди,Donor Funds
+fundraisingPlatforms,Позабюджетні кошти,Fundrasing Platforms
+none,Відсутне фінансування,None
+techAssistance,Кошти техдопомоги,Technical Assistance
