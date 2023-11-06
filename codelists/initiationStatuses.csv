@@ -1,0 +1,6 @@
+code,name_ua,name_en
+pending,Ініціація,Pending
+active,Виконання,Active
+complete,Успішно завершено,Complete
+cancelled,Відмінено,Cancelled
+unsuccessful ,Неуспішно завершено,Unsuccessful 
