@@ -1,0 +1,78 @@
+code,name_ua,name_en
+A,"Сільське, рибне, лісове господарство","Agriculture, Fishing And Forestry"
+AB,"Дорадча діяльність у сільському господарстві, дослідження та інша допоміжна діяльність","Agricultural Extension, Research, and Other Support Activities"
+AF,Рибне господарство,Fisheries
+AH,Культури,Crops
+AI,Зрошення та дренаж,Irrigation and Drainage
+AK,"Державне управління – сільське, рибне та лісове господарство","Public Administration – Agriculture, Fishing & Forestry"
+AL,Тваринництво,Livestock
+AT,Лісове господарство,Forestry
+AZ,"Інше сільське, рибне та лісове господарство","Other Agriculture, Fishing and Forestry"
+B,Державне управління,Public Administration
+BC,Центральний уряд (центральні агентства),Central Government (Central Agencies)
+BG,Закон і справедливість,Law and Justice
+BH,Субнаціональний уряд,Sub National Government
+BZ,Інше державне управління,Other Public Administration
+C,Комунікації та ІТ,Information And Communications Technologies
+CF,Державне управління – інформаційно-комунікаційні технології,Public Administration - Information and Communications Technologies
+CI,ІКТ-інфраструктура,ICT Infrastructure
+CS,Послуги ІКТ,ICT Services
+CZ,Інші інформаційно-комунікаційні технології,Other Information and Communications Technologies
+E,Освіта,Education
+EC,Дошкільна освіта,Early Childhood Education
+EF,Державне управління – освіта,Public Administration – Education
+EL,Базова та безперервна освіта дорослих,Adult Basic and Continuing Education
+EP,Початкова освіта,Primary Education
+ES,Середня освіта,Secondary Education
+ET,Вища освіта,Tertiary Education
+EW,Розвиток робочої сили та професійна освіта,Workforce Development and Vocational Education
+EZ,Інша освіта,Other Education
+F,Фінансовий сектор,Financial Sector
+FA,Банківські установи,Banking Institutions
+FD,Страхування та Пенсія,Insurance and Pension
+FK,Ринки капіталу,Capital Markets
+FL,Інші небанківські фінансові установи,Other Non-bank Financial Institutions
+FP,Державне управління – фінансовий сектор,Public Administration – Financial Sector
+H,Охорона здоров'я,Health
+HF,Державне управління – охорона здоров’я,Public Administration - Health
+HG,Здоров'я,Health
+HQ,Заклади охорони здоров'я та будівництво,Health Facilities and Construction
+L,Енергетика та видобуток,Energy And Extractives
+LB,Відновлювана енергія Біомаса,Renewable Energy Biomass
+LC,Нафта і газ,Oil and Gas
+LH,Відновлювана енергія Гідро,Renewable Energy Hydro
+LI,Відновлювана енергія Геотермальна,Renewable Energy Geothermal
+LM,Майнінг,Mining
+LN,Виробництво невідновлюваної енергії,Non-Renewable Energy Generation
+LP,Державне управління – енергетика та видобуток,Public Administration – Energy and Extractives
+LT,Передача та розподіл енергії,Energy Transmission and Distribution
+LU,Відновлювана енергія Сонячна,Renewable Energy Solar
+LW,Відновлювана енергія вітру,Renewable Energy Wind
+LZ,Інші види енергії та видобутку,Other Energy and Extractives
+O,Інші сектори,Other sectors
+S,Соціальний захист,Social Protection
+SA,Соціальний захист,Social Protection
+SG,Державне управління – соціальний захист,Public Administration – Social Protection
+T,Транспортні послуги,Transportation
+TC,Міський транспорт,Urban Transport
+TF,Державне управління – транспорт,Public Administration - Transportation
+TI,Сільські та міжміські дороги,Rural and Inter-Urban Roads
+TP,Порти/водні шляхи,Ports/Waterways
+TV,Авіація,Aviation
+TW,Залізниці,Railways
+TZ,Інший транспорт,Other Transportation
+W,"Управління водопостачанням, санітарією та відходами","Water, Sanitation And Waste Management"
+WA,Санітарія,Sanitation
+WB,Поводження з відходами,Waste Management
+WC,Постачання води,Water Supply
+WF,"Державне управління – водопостачання, санітарія та управління відходами","Public Administration - Water, Sanitation and Waste Management"
+WZ,"Інше водопостачання, санітарія та управління відходами","Other Water Supply, Sanitation and Waste Management"
+Y,"Промисловість, торгівля та послуги","Industry, Trade And Services"
+YA,"Аграрні ринки, комерціалізація та агробізнес","Agricultural markets, commercialization and agribusiness"
+YF,"Державне управління – промисловість, торгівля та послуги","Public Administration - Industry, Trade and Services"
+YH,Будівництво житла,Housing Construction
+YM,Виробництво,Manufacturing
+YS,Послуги,Services
+YT,Туризм,Tourism
+YY,Торгівля,Trade
+YZ,"Інша промисловість, торгівля та послуги","Other Industry, Trade and Services"
