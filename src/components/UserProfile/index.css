@@ -1,0 +1,30 @@
+.profile-container {
+  position: relative;
+  min-width: 20px;
+}
+
+.nophoto {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+}
+
+.profile-container .fa-facebook, .profile-container .fa-google {
+  position: absolute; 
+  bottom:5px; 
+  left:-3px;
+  z-index: 1;
+}
+
+.profile-photo {
+  padding: 3px 2px 3px 1px !important;
+  border-radius: 100%;
+}
+
+/* .profile-photo {
+  transition: all 0.5s
+}
+
+.profile-photo:hover {
+  transform: scale(2)
+} */

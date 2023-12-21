@@ -1,0 +1,82 @@
+export function getUrlParameter(paramName) {
+  let lang = "";
+  if (window.URLSearchParams) {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has(paramName)) lang = urlParams.get(paramName);
+  } else {
+    // if browser doesn't support URLSearchParams
+    const getUrlParam = (name) => {
+      name = name
+        .replace(new RegExp("[\\[]"), "\\[")
+        .replace(new RegExp("[\\]]"), "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+      var results = regex.exec(window.location.search);
+      return results === null
+        ? ""
+        : decodeURIComponent(results[1].replace(/\+/g, " "));
+    };
+    lang = getUrlParam(paramName);
+  }
+  return lang;
+}
+
+export function isTouchDevice() {
+  return (
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0
+  );
+}
+
+export function dispatchTouchEvent(e, eventType) {
+  const target = document.elementFromPoint(
+    e.srcEvent.clientX,
+    e.srcEvent.clientY
+  );
+  if (target) {
+    const touchObj = new Touch({
+      identifier: Date.now(),
+      target: target,
+      clientX: e.srcEvent.clientX,
+      clientY: e.srcEvent.clientY,
+      pageX: e.srcEvent.pageX,
+      pageY: e.srcEvent.pageY,
+      screenX: e.srcEvent.screenX,
+      screenY: e.srcEvent.screenY,
+      // radiusX: 2.5,
+      // radiusY: 2.5,
+      // rotationAngle: 10,
+      // force: 0.5,
+    });
+
+    const te = new TouchEvent(eventType, {
+      cancelable: true,
+      bubbles: true,
+      touches: [touchObj],
+      targetTouches: [touchObj],
+      changedTouches: [touchObj],
+      clientX: e.srcEvent.clientX,
+      clientY: e.srcEvent.clientY,
+    });
+    target.dispatchEvent(te);
+  }
+}
+
+export function dispatchPointerEvent(e, eventType) {
+  const target = document.elementFromPoint(
+    e.srcEvent.clientX,
+    e.srcEvent.clientY
+  );
+  if (target) {
+    const pe = new PointerEvent(eventType, {
+      bubbles: true,
+      cancelable: true,
+      composed: true,
+      pointerId: e.srcEvent.pointerId,
+      pointerType: e.srcEvent.pointerType,
+      clientX: e.srcEvent.clientX,
+      clientY: e.srcEvent.clientY,
+    });
+    target.dispatchEvent(pe);
+  }
+}

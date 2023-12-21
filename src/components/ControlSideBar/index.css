@@ -1,0 +1,19 @@
+.ctrl-sidebar-closed {
+  /* display: block !important; */
+  right: -500px;
+}
+
+.ctrl-sidebar-closed .control-sidebar {
+  display: block !important;
+}
+
+.control-sidebar-slide-open .control-sidebar {
+  /* overflow: visible; Safari issue fix when obj maximized */
+  overflow-y: auto;
+  height: calc(100% - 47px);
+  z-index: 1033 !important;
+}
+
+.qv-global-selections .qv-gs-section {
+  height: calc(50% - 47px) !important;
+}

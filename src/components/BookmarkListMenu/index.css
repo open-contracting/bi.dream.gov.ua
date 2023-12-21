@@ -1,0 +1,168 @@
+.bm-item {
+  padding: 0.15rem 0.15rem !important;
+}
+
+.bm-ops {
+  visibility: hidden;
+}
+
+.bm-item:hover .bm-ops {
+  visibility: visible;
+}
+
+.bm-text--small {
+  font-size: .875rem;
+}
+
+/* #f8f9fa */
+.bm-item:active {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+.bm-remove:hover {
+  color: #dc3545!important;
+}
+
+.bm-toolbtn:hover, .bm-publish:hover, .bm-unpublish:hover, .bm-share:hover {
+  color: #009845!important;
+}
+
+.bm-create, .bm-published {
+  color: #009845;
+}
+
+.bm-toolbtn.active {
+  border-bottom: dotted 1px lightgray;
+  border-radius: 0;
+}
+
+.bm-copied {
+  position: absolute;
+  visibility: hidden;
+  transition:.6s;
+  z-index:100;
+  color:transparent;
+  font-size: 1rem !important;
+  margin-top: 0px;  
+}
+
+.bm-copied.animate {
+  visibility: visible;
+  animation: fade 0.7s;
+  animation-timing-function: ease-in-out;
+  margin-top: 0px;
+}
+
+.bm-badge {
+  font-size: .6rem;
+  font-weight: 300;
+  position: relative;
+  top: 5px;
+  left: -10px;
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  /* border-radius: 0.25rem;   */
+}
+
+/* .menu-bm {
+  max-height: calc(100vh - 120px);
+} */
+
+.bookmark-list {
+  overflow: auto;
+  max-height: calc(100vh - 200px); 
+}
+
+.bm-item-row {
+  height: 35px;
+}
+
+.bm-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.bm-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.15s ease-out;
+}
+
+.bm-details.show {
+  height: auto;
+  max-height: 85px;
+  transition: max-height 0.15s ease-in;
+}
+
+.bm-item .btn {
+  padding: 0.25rem;
+  min-width: 33px;
+}
+
+.bm-item .tags {
+  font-size: 0.85rem;
+}
+
+.bm-share-item {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease-out;
+}
+
+.bm-share-item.show {
+  height: auto;
+  max-height: 85px;
+  transition: max-height 0.1s ease-in;
+}
+
+.fb-share-button, .fb-share-button:hover {
+  background-color: #4385f5;
+  color: white;
+  border: none;  
+}
+
+.fb-share-button:hover {
+  background-color: #4267b2;
+}
+
+.goog-share-button {
+  background-color: #db4c3e;
+  border: none;  
+}
+
+.goog-share-button:hover {
+  background-color: #dc3545;
+}
+
+.telegram-share-button {
+  background-color: #54A9EB;
+}
+
+.telegram-share-button:hover {
+  background-color: #1a97f6;
+}
+
+.viber-share-button {
+  background-color: #675aaa;
+}
+
+.viber-share-button:hover {
+  background-color: #5639e7;
+}
+
+.btn-share {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.bm-info-feedback {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+}

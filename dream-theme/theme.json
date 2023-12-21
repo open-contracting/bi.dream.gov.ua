@@ -1,0 +1,1390 @@
+{
+    "_inherit": false,
+    "_cards": false,
+    "customStyles": [
+        {
+            "cssRef": "theme.css",
+            "classRef": "dream-theme"
+        }
+    ],
+    "_variables": {
+        "@default": "#000000",
+        "@light": "white",
+		"@dark": "#000000",
+        "@bgColor": "transparent",
+        "@font-family": "Rubik, QlikView Sans, sans-serif",
+        "@font-normal": "14px",
+        "@font-axis": "12px",
+        "@H1": "24px",
+        "@H2": "18px",
+        "@H3": "14px",
+        "@H4": "13px",
+        "@H5": "12px",
+        "@H6": "10px",
+        "@B60": "#999999",
+        "@B90": "#e6e6e6",
+        "@color1": "#ffd500",
+        "@color2": "#ffd934",
+        "@color3": "#ffdd4e",
+        "@color4": "#ffe162",
+        "@color5": "#ffe575",
+        "@color6": "#ffe986",
+        "@color7": "#ffed96",
+        "@color8": "#fff1a6",
+        "@color9": "#fff4b5",
+        "@color10": "#fff8c4",
+        "@color11": "#fffbd2",
+        "@color12": "#ffffe0",
+        "@brncolor1": "#034e7b",
+        "@brncolor2": "#0b5d90",
+        "@brncolor3": "#206ca1",
+        "@brncolor4": "#387baf",
+        "@brncolor5": "#508abb",
+        "@brncolor6": "#699ac5",
+        "@brncolor7": "#81a9cf",
+        "@brncolor8": "#9ab9d8",
+        "@brncolor9": "#b3c8e1",
+        "@brncolor10": "#ccd8ea",
+        "@brncolor11": "#e5e7f2",
+        "@brncolor12": "#fff7fb",
+        "@others": "#bdbdbd",
+        "@red": "#F23005",
+        "@yellow": "#ffd500",
+        "@green": "#009845",
+        "@axisMinorLineColor": "#E6E6E6",
+        "@axisMajorLineColor": "#F2F2F2",
+        "@gridMinorLineColor": "#E6E6E6",
+        "@gridMajorLineColor": "#F2F2F2",
+        "@gridHighContrast": "#A6A6A6",
+        "@lineMinorLineColor": "#E6E6E6",
+        "@lineMajorLineColor": "#F2F2F2",
+        "@refLineColor": "#595959",
+        "@footerColor": "#808080"
+    },
+    "color": "@default",
+    "backgroundColor": "@bgColor",
+    "fontSize": "@font-normal",
+    "fontFamily": "@font-family",
+    "dataColors": {
+        "primaryColor": "@color1",
+        "othersColor": "@others",
+        "errorColor": "@red",
+        "nullColor": "@default"
+    },
+    "palettes": {
+        "data": [
+            {
+                "name": "DREAM data palette",
+                "translation": "DREAM data palette",
+                "propertyValue": "dream-data-palette-1",
+                "type": "row",
+                "scale": [
+                    "@color1",
+                    "@color2",
+                    "@color3",
+                    "@color4",
+                    "@color5",
+                    "@color6",
+                    "@color7",
+                    "@color8",
+                    "@color9",
+                    "@color10",
+                    "@color11",
+                    "@color12"
+                ]
+            },
+            {
+                "name": "DREAM data palette 2",
+                "translation": "DREAM data palette 2",
+                "propertyValue": "dream-data-palette-2",
+                "type": "row",
+                "scale": [
+                    "@brncolor1",
+                    "@brncolor2",
+                    "@brncolor3",
+                    "@brncolor4",
+                    "@brncolor5",
+                    "@brncolor6",
+                    "@brncolor7",
+                    "@brncolor8",
+                    "@brncolor9",
+                    "@brncolor10",
+                    "@brncolor11",
+                    "@brncolor12"
+                ]
+            },
+            {
+                "name": "12 Colors",
+                "translation": "properties.colorNumberOfColors.12",
+                "propertyValue": "12",
+                "type": "pyramid",
+                "scale": [
+                    [
+                        "#87D2AA"
+                    ],
+                    [
+                        "#87D2AA",
+                        "#ffd500"
+                    ],
+                    [
+                        "#87D2AA",
+                        "#ffd500",
+                        "#d296d2"
+                    ],
+                    [
+                        "#87D2AA",
+                        "#ffd500",
+                        "#d296d2",
+                        "#649bff"
+                    ],
+                    [
+                        "#87D2AA",
+                        "#ffd500",
+                        "#d296d2",
+                        "#649bff",
+                        "#cc7eba"
+                    ],
+                    [
+                        "#87D2AA",
+                        "#ffd500",
+                        "#d296d2",
+                        "#649bff",
+                        "#cc7eba",
+                        "#0000ff"
+                    ],
+                    [
+                        "#87D2AA",
+                        "#ffd500",
+                        "#d296d2",
+                        "#649bff",
+                        "#cc7eba",
+                        "#0000ff",
+                        "#67db9c"
+                    ],
+                    [
+                        "#87D2AA",
+                        "#ffd500",
+                        "#d296d2",
+                        "#649bff",
+                        "#cc7eba",
+                        "#0000ff",
+                        "#67db9c",
+                        "#e7f993"
+                    ],
+                    [
+                        "#87D2AA",
+                        "#ffd500",
+                        "#d296d2",
+                        "#649bff",
+                        "#cc7eba",
+                        "#0000ff",
+                        "#67db9c",
+                        "#e7f993",
+                        "#ffb475"
+                    ],
+                    [
+                        "#87D2AA",
+                        "#ffd500",
+                        "#d296d2",
+                        "#649bff",
+                        "#cc7eba",
+                        "#0000ff",
+                        "#67db9c",
+                        "#e7f993",
+                        "#ffb475",
+                        "#df8194"
+                    ],
+                    [
+                        "#87D2AA",
+                        "#ffd500",
+                        "#d296d2",
+                        "#649bff",
+                        "#cc7eba",
+                        "#0000ff",
+                        "#67db9c",
+                        "#e7f993",
+                        "#ffb475",
+                        "#df8194",
+                        "#9be8be"
+                    ],
+                    [
+                        "#87D2AA",
+                        "#ffd500",
+                        "#d296d2",
+                        "#649bff",
+                        "#cc7eba",
+                        "#0000ff",
+                        "#67db9c",
+                        "#e7f993",
+                        "#ffb475",
+                        "#df8194",
+                        "#9be8be",
+                        "#cdd1db"
+                    ]
+                ]
+            },
+            {
+                "name": "100 Colors",
+                "translation": "properties.colorNumberOfColors.100",
+                "propertyValue": "100",
+                "type": "row",
+                "scale": [
+                    "#99c867",
+                    "#e43cd0",
+                    "#e2402a",
+                    "#66a8db",
+                    "#3f1a20",
+                    "#e5aa87",
+                    "#3c6b59",
+                    "#aa2a6b",
+                    "#e9b02e",
+                    "#7864dd",
+                    "#65e93c",
+                    "#5ce4ba",
+                    "#d0e0da",
+                    "#d796dd",
+                    "#64487b",
+                    "#e4e72b",
+                    "#6f7330",
+                    "#932834",
+                    "#ae6c7d",
+                    "#986717",
+                    "#e3cb70",
+                    "#408c1d",
+                    "#dd325f",
+                    "#533d1c",
+                    "#2a3c54",
+                    "#db7127",
+                    "#72e3e2",
+                    "#e2c1da",
+                    "#d47555",
+                    "#7d7f81",
+                    "#54ae9b",
+                    "#e9daa6",
+                    "#3a8855",
+                    "#5be66e",
+                    "#ab39a4",
+                    "#a6e332",
+                    "#6c469d",
+                    "#e39e51",
+                    "#4f1c42",
+                    "#273c1c",
+                    "#aa972e",
+                    "#8bb32a",
+                    "#bdeca5",
+                    "#63ec9b",
+                    "#9c3519",
+                    "#aaa484",
+                    "#72256d",
+                    "#4d749f",
+                    "#9884df",
+                    "#e590b8",
+                    "#44b62b",
+                    "#ad5792",
+                    "#c65dea",
+                    "#e670ca",
+                    "#e38783",
+                    "#29312d",
+                    "#6a2c1e",
+                    "#d7b1aa",
+                    "#b1e7c3",
+                    "#cdc134",
+                    "#9ee764",
+                    "#56b8ce",
+                    "#2c6323",
+                    "#65464a",
+                    "#b1cfea",
+                    "#3c7481",
+                    "#3a4e96",
+                    "#6493e1",
+                    "#db5656",
+                    "#747259",
+                    "#bbabe4",
+                    "#e33f92",
+                    "#d0607d",
+                    "#759f79",
+                    "#9d6b5e",
+                    "#8574ae",
+                    "#7e304c",
+                    "#ad8fac",
+                    "#4b77de",
+                    "#647e17",
+                    "#b9c379",
+                    "#8da8b0",
+                    "#b972d9",
+                    "#786279",
+                    "#7ec07d",
+                    "#916436",
+                    "#2d274f",
+                    "#dce680",
+                    "#759748",
+                    "#dae65a",
+                    "#459c49",
+                    "#b7934a",
+                    "#51c671",
+                    "#9ead3f",
+                    "#969a5c",
+                    "#b9976a",
+                    "#46531a",
+                    "#c0f084",
+                    "#76c146",
+                    "#bad0ad"
+                ]
+            }
+        ],
+        "ui": [
+            {
+                "name": "DREAM Palette",
+                "colors": [
+                    "@color1",
+                    "@color2",
+                    "@color3",
+                    "@color4",
+                    "@color5",
+                    "@color6",
+                    "@color7",
+                    "@color8",
+                    "@color9",
+                    "@color10",
+                    "@color11",
+                    "@color12"
+                ]
+            },
+            {
+                "name": "DREAM Palette 2",
+                "colors": [
+                    "@brncolor1",
+                    "@brncolor2",
+                    "@brncolor3",
+                    "@brncolor4",
+                    "@brncolor5",
+                    "@brncolor6",
+                    "@brncolor7",
+                    "@brncolor8",
+                    "@brncolor9",
+                    "@brncolor10",
+                    "@brncolor11",
+                    "@brncolor12"
+                ]
+            },
+            {
+                "name": "Palette",
+                "colors": [
+                    "#ffffff",
+                    "#46c646",
+                    "#276e27",
+                    "#b6d7ea",
+                    "#7db8da",
+                    "#4477aa",
+                    "#8e477d",
+                    "#ffcf02",
+                    "#f8981d",
+                    "#f93f17",
+                    "#633d0c",
+                    "#b0afae",
+                    "#7b7a78",
+                    "#545352",
+                    "#000000"
+                ]
+            }
+        ]
+    },
+    "scales": [
+        {
+            "name": "DREAM Sequential Gradient 1",
+            "translation": "DREAM Sequential Gradient",
+            "_id": "5ee885f1a04760036601e6ca",
+            "propertyValue": "sg",
+            "type": "gradient",
+            "scale": [
+                "@color1",
+                "@color12"
+            ]
+        },
+        {
+            "name": "DREAM Sequential Classes 1",
+            "translation": "DREAM Sequential Classes",
+            "_id": "5ee885f1a04760036601e6cb",
+            "propertyValue": "sc",
+            "type": "class",
+            "scale": [
+                "@color1",
+                "@color2",
+                "@color3",
+                "@color4",
+                "@color5",
+                "@color6",
+                "@color7",
+                "@color8",
+                "@color9",
+                "@color10",
+                "@color11",
+                "@color12"
+            ]
+        },
+        {
+            "name": "DREAM Sequential Gradient 2",
+            "translation": "DREAM Sequential Gradient 2",
+            "_id": "5ee885f1a04760036601e6cc",
+            "propertyValue": "dg",
+            "type": "gradient",
+            "scale": [
+                "@brncolor1",
+                "@brncolor12"
+            ]
+        },
+        {
+            "name": "DREAM Sequential Classes 2",
+            "translation": "DREAM Sequential Classes 2",
+            "_id": "5ee885f1a04760036601e6cd",
+            "propertyValue": "dc",
+            "type": "class",
+            "scale": [
+                "@brncolor1",
+                "@brncolor2",
+                "@brncolor3",
+                "@brncolor4",
+                "@brncolor5",
+                "@brncolor6",
+                "@brncolor7",
+                "@brncolor8",
+                "@brncolor9",
+                "@brncolor10",
+                "@brncolor11",
+                "@brncolor12"
+            ]
+        }
+    ],
+    "object": {
+        "title": {
+            "main": {
+                "color": "@default",
+                "fontSize": "@font-normal",
+                "fontFamily": "@font-family"
+            },
+            "subTitle": {
+                "color": "@default",
+                "fontSize": "@font-normal",
+                "fontFamily": "@font-family"
+            },
+            "footer": {
+                "color": "@footerColor",
+                "fontSize": "@font-normal",
+                "fontFamily": "@font-family",
+                "backgroundColor": "@bgColor"
+            }
+        },
+        "label": {
+            "name": {
+                "color": "@default",
+                "fontSize": "@font-normal"
+            },
+            "value": {
+                "color": "@default",
+                "fontSize": "@font-normal"
+            }
+        },
+        "axis": {
+            "title": {
+                "color": "@default",
+                "fontSize": "@font-normal",
+                "fontFamily": "@font-family"
+            },
+            "label": {
+                "name": {
+                    "color": "@default",
+                    "fontSize": "@font-axis",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "line": {
+                "major": {
+                    "color": "@axisMajorLineColor"
+                },
+                "minor": {
+                    "color": "@axisMinorLineColor"
+                }
+            }
+        },
+        "grid": {
+            "line": {
+                "highContrast": {
+                    "color": "@gridHighContrast"
+                },
+                "major": {
+                    "color": "@gridMajorLineColor"
+                },
+                "minor": {
+                    "color": "@gridMinorLineColor"
+                }
+            }
+        },
+        "referenceLine": {
+            "label": {
+                "name": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "outOfBounds": {
+                "color": "@default",
+                "backgroundColor": "@default",
+                "fontSize": "@H6"
+            }
+        },
+        "legend": {
+            "title": {
+                "color": "@default",
+                "fontSize": "@font-normal",
+                "fontFamily": "@font-family"
+            },
+            "label": {
+                "color": "@default",
+                "fontSize": "@font-normal",
+                "fontFamily": "@font-family"
+            }
+        },
+        "barChart": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                },
+                "label": {
+                    "name": {
+                        "color": "@default",
+                        "fontSize": "@font-axis",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@axisMajorLineColor"
+                    },
+                    "minor": {
+                        "color": "@axisMinorLineColor"
+                    }
+                }
+            },
+            "legend": {
+                "title": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                },
+                "label": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                }
+            },
+            "label": {
+                "value": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "outOfRange": {
+                "color": "@default"
+            }
+        },
+        "boxPlot": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                },
+                "label": {
+                    "name": {
+                        "color": "@default",
+                        "fontSize": "@font-axis",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@axisMajorLineColor"
+                    },
+                    "minor": {
+                        "color": "@axisMinorLineColor"
+                    }
+                }
+            },
+            "box": {
+                "whisker": {
+                    "stroke": "@default"
+                },
+                "line": {
+                    "stroke": "@default"
+                },
+                "box": {
+                    "fill": "@light",
+                    "stroke": "@default"
+                }
+            }
+        },
+        "comboChart": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                },
+                "label": {
+                    "name": {
+                        "color": "@default",
+                        "fontSize": "@font-axis",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@axisMajorLineColor"
+                    },
+                    "minor": {
+                        "color": "@axisMinorLineColor"
+                    }
+                }
+            },
+            "legend": {
+                "title": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                },
+                "label": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                }
+            }
+        },
+        "distributionPlot": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "sans-serif"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "sans-serif"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "sans-serif",
+                    "backgroundColor": "@bgColor"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "sans-serif",
+                    "color": "@default"
+                },
+                "label": {
+                    "name": {
+                        "color": "@default",
+                        "fontSize": "@font-axis",
+                        "fontFamily": "sans-serif"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@axisMajorLineColor"
+                    },
+                    "minor": {
+                        "color": "@axisMinorLineColor"
+                    }
+                }
+            },
+            "box": {
+                "fill": "@default"
+            }
+        },
+        "filterpane": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            }
+        },
+        "gauge": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                },
+                "label": {
+                    "name": {
+                        "color": "@default",
+                        "fontSize": "@font-axis",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@default"
+                    },
+                    "minor": {
+                        "color": "@default"
+                    }
+                }
+            },
+            "label": {
+                "value": {
+                    "color": "@default"
+                }
+            }
+        },
+        "histogram": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                },
+                "label": {
+                    "name": {
+                        "color": "@default",
+                        "fontSize": "@font-axis",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@axisMajorLineColor"
+                    },
+                    "minor": {
+                        "color": "@axisMinorLineColor"
+                    }
+                }
+            },
+            "label": {
+                "value": {
+                    "color": "@default",
+                    "fontSize": "40px"
+                }
+            }
+        },
+        "kpi": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            },
+            "label": {
+                "name": {
+                    "color": "@default",
+                    "fontFamily": "@font-family"
+                },
+                "value": {
+                    "fontFamily": "@font-family"
+                }
+            }
+        },
+        "lineChart": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                },
+                "label": {
+                    "name": {
+                        "color": "@default",
+                        "fontSize": "@font-axis",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@axisMajorLineColor"
+                    },
+                    "minor": {
+                        "color": "@axisMinorLineColor"
+                    }
+                }
+            },
+            "legend": {
+                "title": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                },
+                "label": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                }
+            },
+            "outOfRange": {
+                "color": "@default"
+            },
+            "label": {
+                "value": {
+                    "color": "@dark",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                }
+            }
+        },
+        "listBox": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "content": {
+                "color": "@default",
+                "fontSize": "@font-normal",
+                "fontFamily": "@font-family"
+            }
+        },
+        "mapChart": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            }
+        },
+        "pieChart": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            },
+            "axis": {
+                "title": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "legend": {
+                "title": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                },
+                "label": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                }
+            },
+            "label": {
+                "name": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "value": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                }
+            }
+        },
+        "pivotTable": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            },
+            "header": {
+                "fontSize": "@font-normal",
+                "fontFamily": "@font-family",
+                "color": "@default"
+            },
+            "content": {
+                "fontSize": "@font-normal",
+                "fontFamily": "@font-family",
+                "color": "@default",
+                "hover": {
+                    "backgroundColor": "inherit",
+                    "color": "inherit"
+                }
+            }
+        },
+        "scatterPlot": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                },
+                "label": {
+                    "name": {
+                        "color": "@default",
+                        "fontSize": "@font-axis",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@axisMajorLineColor"
+                    },
+                    "minor": {
+                        "color": "@axisMinorLineColor"
+                    }
+                }
+            },
+            "legend": {
+                "title": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                },
+                "label": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                }
+            },
+            "label": {
+                "value": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                }
+            }
+        },
+        "straightTable": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            },
+            "header": {
+                "fontSize": "@font-normal",
+                "fontFamily": "@font-family",
+                "color": "@default"
+            },
+            "content": {
+                "fontSize": "@font-normal",
+                "fontFamily": "@font-family",
+                "color": "@default",
+                "hover": {
+                    "backgroundColor": "inherit",
+                    "color": "inherit"
+                }
+            }
+        },
+        "textImage": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            }
+        },
+        "treemap": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            },
+            "legend": {
+                "title": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                },
+                "label": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                }
+            },
+            "branch": {
+                "backgroundColor": "@default",
+                "label": {
+                    "color": "@light",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "leaf": {
+                "label": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                }
+            }
+        },
+        "waterfallChart": {
+            "backgroundColor": "@bgColor",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@default",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footerColor",
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@bgColor"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                },
+                "label": {
+                    "name": {
+                        "color": "@default",
+                        "fontSize": "@font-axis",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@axisMajorLineColor"
+                    },
+                    "minor": {
+                        "color": "@axisMinorLineColor"
+                    }
+                }
+            },
+            "legend": {
+                "label": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family",
+                    "color": "@default"
+                }
+            },
+            "label": {
+                "value": {
+                    "fontSize": "@font-normal",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "value": {
+                "color": {
+                    "default": "@default",
+                    "dark": "@dark",
+                    "light": "@light"
+                }
+            },
+            "shape": {
+                "positiveValue": {
+                    "fill": "@green"
+                },
+                "negativeValue": {
+                    "fill": "@red"
+                },
+                "subtotal": {
+                    "fill": "#000000"
+                },
+                "bridge": {
+                    "stroke": "#333333"
+                }
+            }
+        }
+    },
+    "fontFamilies": [
+        "American Typewriter, serif",
+        "Andalé Mono, monospace",
+        "Arial Black, sans-serif",
+        "Arial, sans-serif",
+        "Bradley Hand, cursive",
+        "Brush Script MT, cursive",
+        "Comic Sans MS, cursive",
+        "Courier, monospace",
+        "Didot, serif",
+        "Georgia, serif",
+        "Gilroy, sans-serif",
+        "Impact, sans-serif",
+        "Lucida Console, monospace",
+        "Luminari, fantasy",
+        "Monaco, monospace",
+        "QlikView Sans, sans-serif",
+        "Source Sans Pro, sans-serif",
+        "Tahoma, sans-serif",
+        "Times New Roman, serif",
+        "Trebuchet MS, sans-serif",
+        "Verdana, sans-serif"
+    ],
+    "fontSizes": [
+        "8",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "26"
+    ]
+}

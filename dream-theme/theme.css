@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Rubik";
+    src: url("Rubik-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sheet-title-text {
+  font-family: "QlikView Sans", sans-serif;
+}
+
+.qvt-sheet-container, [role="menuitem"], .qv-object-simple-list * {
+  font-family: "QlikView Sans", sans-serif !important;
+}
+
+/* table */
+table th .lui-button {
+  border: none
+}
+
+table th .lui-button:hover {
+  border: 1px solid #b3b3b3;
+}
+
+/* filterPane */
+.qv-collapsed-listbox {
+  height: 28px; 
+}
+
+.qv-listbox .serverLocked, .qv-listbox .serverSelected, .qv-listbox li.selected, .qv-st-data-cell.qv-st-data-cell-selected , .qv-st-data-cell.qv-st-data-cell-selected-highlighted  {
+  background-color: #000000 !important;
+  border-bottom: 1px solid #000000 !important;
+  color: #fff !important;
+}/* Selector green bar */
+.qv-client.qv-dense qv-filterpane.div.state.selected {
+	background: #000000;
+}
+/* Listbox handling blue background */
+.qv-client.qv-dense li.qv-listbox-item.ng-scope.serverSelected {
+	background-color: #000000;
+	border-bottom-color: #000000;
+}
+.qv-client.qv-dense li.qv-listbox-item.ng-scope.selected {
+	background-color: #000000;
+	border-bottom-color: #000000;
+}
+.qv-client.qv-dense li.qv-listbox-item.ng-scope.serverSelected:hover {
+	box-shadow: #000000;
+}
+.qv-client.qv-dense button.sel-toolbar-btn.ng-scope.sel-toolbar-confirm {
+	background-color: #000000;
+}
+.qv-client.qv-dense button.sel-toolbar-btn.ng-scope.sel-toolbar-confirm:hover {
+	background-color: #000000;
+}
+
+/*   */
+.qv-collapsed-listbox .title-wrapper {
+  color: #595959 !important;
+}
+
+.qv-collapsed-listbox .qv-state-count-bar {
+  border: none;
+  height: 3px;
+}
+
+/* calendar */
+.qv-object-qlik-date-picker {
+  height: 28px;
+  border: solid 1px #d9d9d9;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #595959 !important;
+}
+
+.qv-object-simple-list .lui-buttongroup:hover button,
+.qv-object-simple-list .lui-select:hover,
+.qv-object-qlik-date-picker:hover {
+  border: 1px solid #595959;
+}
+
+.qv-object-qlik-date-picker .qv-object-content > div {
+  display: flex;
+  align-items: center;
+}
+
+.qv-object-qlik-date-picker .qv-object-content > div > div {
+  width: 100%;
+}
+
+.qv-object-qlik-date-picker .qv-object-content > div > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 13px;
+}
+
+.qv-object-qlik-date-picker .lui-button__caret {
+  margin: 0 !important;
+  min-width: 0 !important;
+}
+
+/* Table footer */
+.qv-object footer:hover {
+  color: #424242;
+}
+
+.qv-object-powerkpi .powerkpi-theme {
+  background: linear-gradient(#508abb, #ccdeec) !important;
+  border-top: solid 2px #508abb;
+}
+
+.qv-object-powerkpi .powerkpi-theme:hover {
+  background: linear-gradient(#0057b8, #b9daff) !important;
+  border-top: solid 2px #0057b8;
+}
+
+.qv-object-powerkpi .powerkpi-theme-selected {
+  background: linear-gradient(#0057b8, #b9daff) !important;
+  border-top: solid 2px #0057b8;
+}
+
+.qv-object-powerkpi .hover-highlight:hover div {
+  color: #2b5e88 !important;
+}
+
+.qv-object-qlik-button-for-navigation .qv-object-header.thin {
+  height: 0px !important;
+  max-height: 0px;
+}
+
+.qv-object-qlik-button-for-navigation button {
+  text-align: center;
+  border: 1px solid transparent;
+  background-color: transparent !important;
+  border-color: #d9d9d9;
+  transition: border-color 200ms ease-out;
+  background-image: none;
+}
+
+.qv-object-qlik-button-for-navigation button:hover {
+border-color: #595959;
+}

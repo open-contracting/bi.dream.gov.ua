@@ -1,0 +1,18 @@
+.login-menu {
+  padding: 0.5rem 1rem;
+}
+
+.login-menu .btn {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.login-menu .btn.google {
+  background-color: #db4c3e;
+  border: none;  
+}
+
+.login-menu .btn.facebook {
+  background-color: #4385f5;
+  border: none;  
+}
