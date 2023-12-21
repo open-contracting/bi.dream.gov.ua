@@ -161,7 +161,7 @@ export default function DataAvailability({ title , appDisclaimer , pageTitle, Ex
                         // height="383px"
                         height="max(calc(50vh - 142px), 150px)"
                         showHeader={true}
-                        showMaximize={false}
+                        showMaximize={true}
                         showExport={true}
                         onBeforeExportHandler={async ({  }) => {
                           //console.log(data);
