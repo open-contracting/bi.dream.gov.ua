@@ -9,6 +9,9 @@
 # testing
 /coverage
 
+# additionals
+/dream-theme
+
 # production
 /build
 
