@@ -11,7 +11,9 @@ jobs:
           cache: npm
           cache-dependency-path: "**/package-lock.json"
       - run: npm ci
-      - run: npx react-scripts build
+      - env:
+          CI: 'false'
+        run: npx react-scripts build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
