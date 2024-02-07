@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "axios": "^1.6.0",
     "bestzip": "^2.1.7",
     "node-fetch": "^2.6.1"
