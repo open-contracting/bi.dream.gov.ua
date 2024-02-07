@@ -1,2 +1,0 @@
-(this["webpackJsonpqlik-test"]=this["webpackJsonpqlik-test"]||[]).push([[8],{88:function(e,t,s){"use strict";s.r(t),s.d(t,"default",(function(){return n}));var c=s(4),i=s(0);function n(){return Object(i.jsx)(i.Fragment,{children:Object(i.jsx)("div",{className:"row mb-2",children:Object(i.jsx)("div",{className:"col-12",children:Object(i.jsx)(c.a,{id:"DAwCrV",height:"35px",showLoader:!1})})})})}}}]);
-//# sourceMappingURL=8.bcad7e9c.chunk.js.map
