@@ -309,8 +309,14 @@ ul {
     display: none;
   }
 
-  #rAajTDh, #25884c67-d67e-4479-8191-3a33f1685e88 {
-    max-height: 400px;
+  #rAajTDh {
+    max-height: calc(100vh - 284px);
+    min-height: calc(100vh - 284px);
+  }
+
+  #HJHDc, #wfxvhWq, #fNhQvq, #ad0460f4-1da6-4efe-8664-23ccfac64c3d {
+    min-height: calc(min(calc(100vh - 184px), 300px));
+    max-height: calc(min(calc(100vh - 184px), 300px));
   }
 
   #AvjgfP, #avVcA, #QwjCuw, #EJzkRp, #EVZJW {
@@ -342,8 +348,14 @@ ul {
     margin-left: 0;
   }
 
-  #rAajTDh, #25884c67-d67e-4479-8191-3a33f1685e88 {
-    max-height: 400px;
+  #rAajTDh {
+    max-height: calc(100vh - 284px);
+    min-height: calc(100vh - 284px);
+  }
+
+  #HJHDc, #wfxvhWq, #fNhQvq, #ad0460f4-1da6-4efe-8664-23ccfac64c3d {
+    min-height: calc(min(calc(100vh - 184px), 300px));
+    max-height: calc(min(calc(100vh - 184px), 300px));
   }
 
   #AvjgfP, #avVcA, #QwjCuw, #EJzkRp, #EVZJW {
@@ -369,8 +381,18 @@ ul {
 }
 
 @media screen and (max-width: 1000px) {
-  #GhVZpW, #a1c80bf0-040e-4988-8ca1-f694ef28a2fb, #FKymsum, #d640c3c3-454b-40b9-850c-ef92fbe23ad2, #facebb14-f0ea-4c65-8975-3b7cbdc95886, #QALUNss, #JuDbUqN, #dCvpLK, #25884c67-d67e-4479-8191-3a33f1685e88  {
+  #GhVZpW, #a1c80bf0-040e-4988-8ca1-f694ef28a2fb, #FKymsum, #d640c3c3-454b-40b9-850c-ef92fbe23ad2, #facebb14-f0ea-4c65-8975-3b7cbdc95886, #QALUNss, #JuDbUqN, #dCvpLK  {
     max-height: 0px;
+  }
+
+  #rAajTDh {
+    max-height: calc(100vh - 204px);
+    min-height: calc(100vh - 204px);
+  }
+
+  #HJHDc, #wfxvhWq, #fNhQvq, #ad0460f4-1da6-4efe-8664-23ccfac64c3d {
+    min-height: calc(min(calc(100vh - 184px), 300px));
+    max-height: calc(min(calc(100vh - 184px), 300px));
   }
 
   #mjUsR {
@@ -563,4 +585,9 @@ body, html {
 
 .card-maximized .card-header {
   position: relative !important
+}
+
+.range-slider-std {
+  margin-left: 8px;
+  margin-right: 8px;
 }

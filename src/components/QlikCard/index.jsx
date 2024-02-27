@@ -14,6 +14,7 @@ export default function QlikCard({
   titleIcon,
   height = "300px",
   showMaximize = true,
+  showOverlayer = true,
   showExport = true,
   showImageExport = false,
   showPdfExport = false,
@@ -173,8 +174,9 @@ export default function QlikCard({
               id={id}
               height={height} //maximized ? bodyHeight : height
               maximized={maximized}
+              showOverlayer={showOverlayer}
               showDataView={showDataView}
-              disableInteractivity={!allowSelections && !maximized}
+              disableInteractivity={showOverlayer && (!allowSelections && !maximized)}
               onTapEvent={onTapChartHandler}
               // noSelections={!allowSelections}
               // noInteraction={!allowSelections}

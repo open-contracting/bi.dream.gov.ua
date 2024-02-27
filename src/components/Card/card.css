@@ -34,12 +34,18 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
+    /* width: 100%; */
+    width: auto;
     z-index: 100;
   }
 
   .card:hover > .card-header {
     visibility: visible;
+  }
+
+  .card-tools {
+    background: #fffbd1;
+    border-radius: 5px;
   }
   
 }

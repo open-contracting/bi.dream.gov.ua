@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import QlikCard from "components/QlikCard";
 import QlikObject from "components/QlikObject";
 
-export default function Financing({ title , appDisclaimer , pageTitle, ExportChartFootnote}) {
+export default function Financing({ title , appDisclaimer , pageTitle, ExportChartFootnote, menuItemsStrings}) {
   useEffect(() => {
     document.title = `${pageTitle} - ${title}`;
   }, [pageTitle,title]);
@@ -136,6 +136,9 @@ export default function Financing({ title , appDisclaimer , pageTitle, ExportCha
                           if(exportType in { pdf: true, image: true})
                             vis.setOptions({ showTitles: false, footnote:"" });
                         }}
+                        exportText = {menuItemsStrings.exportText}
+                        exportCompletedText = {menuItemsStrings.exportCompletedText}
+                        closeBtnText = {menuItemsStrings.closeBtnText}
                       />
                     </div>
                   </div>
@@ -168,6 +171,9 @@ export default function Financing({ title , appDisclaimer , pageTitle, ExportCha
                           if(exportType in { pdf: true, image: true})
                             vis.setOptions({ showTitles: false, footnote:"" });
                         }}
+                        exportText = {menuItemsStrings.exportText}
+                        exportCompletedText = {menuItemsStrings.exportCompletedText}
+                        closeBtnText = {menuItemsStrings.closeBtnText}
                       />
                     </div>
                   </div>

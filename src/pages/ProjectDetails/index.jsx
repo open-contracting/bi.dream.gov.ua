@@ -4,7 +4,7 @@ import QlikObject from "components/QlikObject";
 import GlobalContext from "GlobalContext";
 
 
-export default function ProjectDetails({ title , appDisclaimer , pageTitle}) {
+export default function ProjectDetails({ title , appDisclaimer , pageTitle, menuItemsStrings}) {
   useEffect(() => {
     document.title = `${pageTitle} - ${title}`;
   }, [pageTitle,title]);
@@ -80,10 +80,10 @@ export default function ProjectDetails({ title , appDisclaimer , pageTitle}) {
                         onAfterExportHandler={async ({  }) => {
                             app.variable.setStringValue('export_link', '0');
                         }}
-
+                        exportText = {menuItemsStrings.exportText}
+                        exportCompletedText = {menuItemsStrings.exportCompletedText}
+                        closeBtnText = {menuItemsStrings.closeBtnText}
                       />
-
-
             </div>
 
 

@@ -4,7 +4,7 @@ import QlikObject from "components/QlikObject";
 import GlobalContext from "GlobalContext";
 
 
-export default function DataAvailability({ title , appDisclaimer , pageTitle, ExportChartFootnote}) {
+export default function DataAvailability({ title , appDisclaimer , pageTitle, ExportChartFootnote, menuItemsStrings}) {
   useEffect(() => {
     document.title = `${pageTitle} - ${title}`;
   }, [pageTitle,title]);
@@ -80,7 +80,7 @@ export default function DataAvailability({ title , appDisclaimer , pageTitle, Ex
               <div className="row justify-content-left">
                 {/* Top charts Row */}
 
-                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
 
                       <div className="row">
                         <div className="col-12 col-xl-12">
@@ -106,6 +106,9 @@ export default function DataAvailability({ title , appDisclaimer , pageTitle, Ex
                               if(exportType in { pdf: true, image: true})
                                 vis.setOptions({ showTitles: false, footnote:"" });
                             }}
+                            exportText = {menuItemsStrings.exportText}
+                            exportCompletedText = {menuItemsStrings.exportCompletedText}
+                            closeBtnText = {menuItemsStrings.closeBtnText}
                           />
                         </div>
                       </div>
@@ -123,7 +126,7 @@ export default function DataAvailability({ title , appDisclaimer , pageTitle, Ex
                       </div>
                     </div>
 
-                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
                       {/* Barchart: property data availability */}
                       <QlikCard
                         id="wfxvhWq"
@@ -146,6 +149,38 @@ export default function DataAvailability({ title , appDisclaimer , pageTitle, Ex
                           if(exportType in { pdf: true, image: true})
                             vis.setOptions({ showTitles: false, footnote:"" });
                         }}
+                        exportText = {menuItemsStrings.exportText}
+                        exportCompletedText = {menuItemsStrings.exportCompletedText}
+                        closeBtnText = {menuItemsStrings.closeBtnText}
+                      />
+                    </div>
+
+                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                      {/* Barchart: distribution of projects */}
+                      <QlikCard
+                        id="HJHDc"
+                        height="max(calc(50vh - 173px), 120px)"
+                        showHeader={true}
+                        showMaximize={false}
+                        showExport={false}
+                        showPdfExport
+                        showImageExport={true}
+                        exportImageWidth={1280}
+                        exportImageHeight={720}
+                        onBeforeExportHandler={async ({ vis, exportType }) => {
+                          //console.log(data);
+                          console.log(vis);
+                          if(exportType in { pdf: true, image: true} && vis)
+                            await vis.setOptions({ showTitles: true, footnote: `${ExportChartFootnote}` });
+                        }}
+                        onAfterExportHandler={async ({ vis, exportType }) => {
+                          console.log('Export type: ', exportType);
+                          if(exportType in { pdf: true, image: true})
+                            vis.setOptions({ showTitles: false, footnote:"" });
+                        }}
+                        exportText = {menuItemsStrings.exportText}
+                        exportCompletedText = {menuItemsStrings.exportCompletedText}
+                        closeBtnText = {menuItemsStrings.closeBtnText}
                       />
                     </div>
 
@@ -170,6 +205,9 @@ export default function DataAvailability({ title , appDisclaimer , pageTitle, Ex
                         onAfterExportHandler={async ({  }) => {
                             app.variable.setStringValue('export_link', '0');
                         }}
+                        exportText = {menuItemsStrings.exportText}
+                        exportCompletedText = {menuItemsStrings.exportCompletedText}
+                        closeBtnText = {menuItemsStrings.closeBtnText}
                       />
                     </div>
                
@@ -179,26 +217,54 @@ export default function DataAvailability({ title , appDisclaimer , pageTitle, Ex
 
 
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+            <div className="row">
+                <div className="col-12">
+                  {/* Data Availiablity % slider */}
+                  <QlikCard
+                    id="zHXvh"
+                    // height="388px"
+                    height="75px"
+                    showHeader={false}
+                    showMaximize={false}
+                    showExport={false}
+                    showOverlayer={false}
+                  />
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-12">
+                  {/* Data Availiablity % Selector */}
+                  <QlikCard
+                    id="ueBBxA"
+                    // height="388px"
+                    height="38px"
+                    showHeader={false}
+                    showMaximize={false}
+                    showExport={false}
+                    showOverlayer={false}
+                  />
+                </div>
+              </div>
               <div className="row">
                 <div className="col-12">
                   {/* FilterPane */}
                   <QlikCard
                     id="mjUsR"
                     // height="388px"
-                    height={`min(min(${FilterHeight}px, calc(100vh - max(calc(100vh - ${FilterHeight}px) - 287px, 50px)), calc(100vh - 287px - 50px)`}
+                    height={`min(min(${FilterHeight}px, calc(100vh - max(calc(100vh - ${FilterHeight}px) - 410px, 50px)), calc(100vh - 410px - 50px)`}
                     showHeader={false}
                     showMaximize={false}
                     showExport={false}
                     showOverlayer={false}
                   />
-                  </div>
                 </div>
+              </div>
               <div className="row">
                 <div className="col-12">
                   {/* FilterPane */}
                   <QlikCard
                     id="dCvpLK"
-                    height={`max(calc(100vh - ${FilterHeight}px) - 287px, 50px)`}
+                    height={`max(calc(100vh - ${FilterHeight}px) - 410px, 50px)`}
                     // height="250px"
                     showHeader={false}
                     showMaximize={false}
@@ -211,15 +277,38 @@ export default function DataAvailability({ title , appDisclaimer , pageTitle, Ex
 
           </div>
 
-          {/* <div className="row mb-2">
-            <div className="col-md-2 col-sm-3 col-2">
+          <div className="row">
+            <div className="col-12">
               <QlikObject
-                id="JMqrBrm"
+                id="5c60045d-6334-4b9c-aeb4-cd67221615cb"
                 height="0px"
                 showLoader={false}
+                showOverlayer={false}
               />
             </div>
-          </div> */}
+          </div>
+
+          <div className="row">
+            <div className="col-12">
+              <QlikObject
+                id="NMpWSe"
+                height="0px"
+                showLoader={false}
+                showOverlayer={false}
+              />
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12">
+              <QlikObject
+                id="NMpWSe"
+                height="0px"
+                showLoader={false}
+                showOverlayer={false}
+              />
+            </div>
+          </div>
           
         </div>
     </section>

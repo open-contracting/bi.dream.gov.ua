@@ -205,13 +205,13 @@ function App() {
             qStringExpression: "=Coalesce($(T(ttlLogin)), ' ')",
           },
           exportText: {
-            qStringExpression: "=$(T(ttlExportTextProcess))",
+            qStringExpression: "=$(T(mshp_export_inProgress))",
           },
           exportCompletedText: {
-            qStringExpression: "=$(T(ttlExportTextComplete))",
+            qStringExpression: "=$(T(mshp_export_complete))",
           },
           closeBtnText: {
-            qStringExpression: "=$(T(ttlExportTextClose))",
+            qStringExpression: "=$(T(mshp_export_close))",
           }
 
         },

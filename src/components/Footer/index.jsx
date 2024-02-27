@@ -107,9 +107,9 @@ const Footer = () => (
         <div className="row justify-content-right float-right md-justify-content-left-manual">
         <div className="float-right md-justify-content-left-manual">
           <a
-            // href="https://mtu.gov.ua/"
-            // target="_blank"
-            // rel="noopener noreferrer"
+            href="https://mtu.gov.ua/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               className="pr-4"
@@ -119,9 +119,9 @@ const Footer = () => (
             />
           </a>
           <a
-            // href="https://restoration.gov.ua//"
-            // target="_blank"
-            // rel="noopener noreferrer"
+            href="https://restoration.gov.ua/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               className="pr-4"
@@ -131,9 +131,9 @@ const Footer = () => (
             />
           </a>
           <a
-            // href="https://restoration.gov.ua//"
-            // target="_blank"
-            // rel="noopener noreferrer"
+            href="https://restoration.gov.ua/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               className="pr-4"
@@ -143,9 +143,9 @@ const Footer = () => (
             />
           </a>
           <a
-            // href="https://www.open-contracting.org/"
-            // target="_blank"
-            // rel="noopener noreferrer"
+            href="https://www.open-contracting.org/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               className="pr-4"
@@ -155,9 +155,9 @@ const Footer = () => (
             />
           </a>
           <a
-            // href="https://www.gov.uk/government/organisations/department-for-international-development"
-            // target="_blank"
-            // rel="noopener noreferrer"
+            href="https://www.gov.uk/government/organisations/department-for-international-development"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               className="pr-4"
@@ -167,9 +167,9 @@ const Footer = () => (
             />
           </a>
           <a
-            // href="https://www.rbcgrp.com/"
-            // target="_blank"
-            // rel="noopener noreferrer"
+            href="https://www.rbcgrp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               className="pr-4"
@@ -179,9 +179,9 @@ const Footer = () => (
             />
           </a>
           <a 
-            // href="https://www.qlik.com/" 
-            // target="_blank" 
-            // rel="noopener noreferrer"
+            href="https://www.qlik.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
             >
             <img
               className="pr-4"

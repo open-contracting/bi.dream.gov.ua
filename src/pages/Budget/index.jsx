@@ -4,7 +4,7 @@ import QlikObject from "components/QlikObject";
 import GlobalContext from "GlobalContext";
 
 
-export default function Budget({ title , appDisclaimer , pageTitle, ExportChartFootnote}) {
+export default function Budget({ title , appDisclaimer , pageTitle, ExportChartFootnote, menuItemsStrings}) {
   useEffect(() => {
     document.title = `${pageTitle} - ${title}`;
   }, [pageTitle,title]);
@@ -147,6 +147,9 @@ export default function Budget({ title , appDisclaimer , pageTitle, ExportChartF
                               if(exportType in { pdf: true, image: true})
                                 vis.setOptions({ showTitles: false, footnote:"" });
                             }}
+                            exportText = {menuItemsStrings.exportText}
+                            exportCompletedText = {menuItemsStrings.exportCompletedText}
+                            closeBtnText = {menuItemsStrings.closeBtnText}
                           />
                         </div>
                       </div>
@@ -176,6 +179,9 @@ export default function Budget({ title , appDisclaimer , pageTitle, ExportChartF
                               if(exportType in { pdf: true, image: true})
                                 vis.setOptions({ showTitles: false, footnote:"" });
                             }}
+                            exportText = {menuItemsStrings.exportText}
+                            exportCompletedText = {menuItemsStrings.exportCompletedText}
+                            closeBtnText = {menuItemsStrings.closeBtnText}    
                           />
                         </div>
                       </div>
@@ -201,7 +207,9 @@ export default function Budget({ title , appDisclaimer , pageTitle, ExportChartF
                                 onAfterExportHandler={async ({  }) => {
                                     app.variable.setStringValue('export_link', '0');
                                 }}
-        
+                                exportText = {menuItemsStrings.exportText}
+                                exportCompletedText = {menuItemsStrings.exportCompletedText}
+                                closeBtnText = {menuItemsStrings.closeBtnText}       
                               />
                             </div>
                         </div>

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import QlikCard from "components/QlikCard";
 import QlikObject from "components/QlikObject";
 
-export default function FinancingDetails({ title , appDisclaimer , pageTitle}) {
+export default function FinancingDetails({ title , appDisclaimer , pageTitle, menuItemsStrings}) {
   useEffect(() => {
     document.title = `${pageTitle} - ${title}`;
   }, [pageTitle,title]);
@@ -63,6 +63,9 @@ export default function FinancingDetails({ title , appDisclaimer , pageTitle}) {
                         showHeader={true}
                         showMaximize={false}
                         showExport={true}
+                        exportText = {menuItemsStrings.exportText}
+                        exportCompletedText = {menuItemsStrings.exportCompletedText}
+                        closeBtnText = {menuItemsStrings.closeBtnText}
                       />
 
             </div>
