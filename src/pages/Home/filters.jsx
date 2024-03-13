@@ -74,13 +74,19 @@ export default function HomeFilters() {
       <div className="row">
         <div className="col-12">
           {/*Filter: Sector*/}
-          <QlikObject id="MmApjV" height="40px" showLoader={true} />
+          <QlikObject id="JaepXAd" height="40px" showLoader={true} />
         </div>
       </div>
       <div className="row">
         <div className="col-12">
           {/*Filter: Subsector*/}
-          <QlikObject id="JaepXAd" height="40px" showLoader={true} />
+          <QlikObject id="tMqkJ" height="40px" showLoader={true} />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12">
+          {/*Filter: Implementer*/}
+          <QlikObject id="ZzZKNs" height="40px" showLoader={true} />
         </div>
       </div>
       <div className="row">
@@ -98,10 +104,18 @@ export default function HomeFilters() {
 
       <div className="row">
         <div className="col-12">
-          {/*Filter: Implementer*/}
-          <QlikObject id="ZzZKNs" height="40px" showLoader={true} />
+          {/*Filter: MOS Facility*/}
+          <QlikObject id="ArYzYbD" height="40px" showLoader={true} />
         </div>
       </div>
+      <div className="row">
+        <div className="col-12">
+          {/*Filter: MOH Facility*/}
+          <QlikObject id="mwgja" height="40px" showLoader={true} />
+        </div>
+      </div>
+
+
       <div className="row">
         <div className="col-12">
           {/*Filter: Governing Body type*/}

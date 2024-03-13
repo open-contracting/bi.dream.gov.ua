@@ -166,7 +166,7 @@ function App() {
             qStringExpression: "=$(T(mshp_FeedbackForm_URL))",
           },
           KPIsAsOfDate: {
-            qStringExpression: "=$(T(mshp_LastReloadTime)) & ' ' & date( last_load_time )",
+            qStringExpression: "=$(T(mshp_LastReloadTime)) & ' ' & ( last_load_time )",
           },
           MenuItem1: {
             qStringExpression: "=$(T(Показники))",
@@ -399,7 +399,7 @@ function App() {
           {/*<GoogleAnalytics id="UA-96492028-2">
             <Routes menuLayout={menuLayout} />
             </GoogleAnalytics>*/}
-          <GoogleAnalytics id="X"> {/*G-B5WMEQ6H8V -for prod OR X -for test*/}
+          <GoogleAnalytics id="G-B5WMEQ6H8V"> {/*G-B5WMEQ6H8V -for prod OR X -for test*/}
             <Routes menuLayout={menuLayout} />
           </GoogleAnalytics>
         </div>
