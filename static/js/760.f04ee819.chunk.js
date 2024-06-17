@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkqlik_test=self.webpackChunkqlik_test||[]).push([[760],{760:(e,s,c)=>{c.r(s),c.d(s,{default:()=>l});var r=c(20),i=c(496);function l(){return(0,i.jsx)(i.Fragment,{children:(0,i.jsx)("div",{className:"row mb-2",children:(0,i.jsx)("div",{className:"col-12",children:(0,i.jsx)(r.c,{id:"DrdLcW",height:"35px",showLoader:!1})})})})}}}]);
+//# sourceMappingURL=760.f04ee819.chunk.js.map
