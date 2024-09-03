@@ -12,7 +12,7 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.3",
-    "axios": "^1.6.0",
+    "axios": "^1.7.4",
     "hammerjs": "^2.0.8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "axios": "^1.6.0",
+    "axios": "^1.7.4",
     "bestzip": "^2.1.7",
     "node-fetch": "^2.6.1"
   }
