@@ -1,20 +1,7 @@
 export function hasUrlParameter(paramName) {
   const url = window.location.search || window.location.hash;
-  if (window.URLSearchParams) {
-    const urlParams = new URLSearchParams(url);
-    return urlParams.has(paramName);
-  } else {
-    // if browser doesn't support URLSearchParams
-    const hasUrlParam = (name) => {
-      name = name
-        .replace(new RegExp("[\\[]"), "\\[")
-        .replace(new RegExp("[\\]]"), "\\]");
-      var regex = new RegExp("[\\?&]" + name + "[&|=]([^&#]*)");
-      var results = regex.exec(url);
-      return !!results;
-    };
-    return hasUrlParam(paramName);
-  }
+  const urlParams = new URLSearchParams(url);
+  return urlParams.has(paramName);
 }
 
 export function getUrlParameter(paramName) { 
@@ -23,26 +10,11 @@ export function getUrlParameter(paramName) {
   if(splitted.length !== 2) return '';
 
   const url = `?${splitted[1]}`;
-  if (window.URLSearchParams) {
-    const urlParams = new URLSearchParams(url);
-    if (urlParams.has(paramName)) {
-      const values = urlParams.getAll(paramName);
-      // use the latest one
-      value = values.length > 0 ? values[values.length - 1] : "";
-    }
-  } else {
-    // if browser doesn't support URLSearchParams
-    const getUrlParam = (name) => {
-      name = name
-        .replace(new RegExp("[\\[]"), "\\[")
-        .replace(new RegExp("[\\]]"), "\\]");
-      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
-      var results = regex.exec(url);
-      return results === null
-        ? ""
-        : decodeURIComponent(results[1].replace(/\+/g, " "));
-    };
-    value = getUrlParam(paramName);
+  const urlParams = new URLSearchParams(url);
+  if (urlParams.has(paramName)) {
+    const values = urlParams.getAll(paramName);
+    // use the latest one
+    value = values.length > 0 ? values[values.length - 1] : "";
   }
   return value;
 }
@@ -50,30 +22,9 @@ export function getUrlParameter(paramName) {
 export function getAllUrlParameterValues(paramName) {
   const url = window.location.search || window.location.hash;
   let values = [];
-  if (window.URLSearchParams) {
-    const urlParams = new URLSearchParams(url);
-    if (urlParams.has(paramName)) 
-      values = urlParams.getAll(paramName);
-  } else {
-      // if browser doesn't support URLSearchParams
-    const getUrlParams = (name) => {
-      const res = [];
-      name = name
-        .replace(new RegExp("[\\[]"), "\\[")
-        .replace(new RegExp("[\\]]"), "\\]");
-      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
-      let results;
-      let str = url;
-      while((results = regex.exec(str)) != null) {
-        console.log('results', results);
-        str = str.substring(results.index+1);
-        console.log(str);
-        res.push(decodeURIComponent(results[1].replace(/\+/g, " ")));
-      }
-      return res;
-    };
-    values = getUrlParams(paramName);    
-  }
+  const urlParams = new URLSearchParams(url);
+  if (urlParams.has(paramName)) 
+    values = urlParams.getAll(paramName);
 
   return values;
 }
