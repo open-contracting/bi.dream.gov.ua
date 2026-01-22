@@ -1,0 +1,67 @@
+/* html, body {
+    height: 100%;
+} */
+
+.nc-pong, #nc-loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    opacity: 1;
+    z-index: 21;
+}
+
+
+.nc-block-ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nc-loader-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 7px;
+}
+
+.nc-loader-text {
+    text-align: center;
+    padding: 5px;
+}
+
+.nc-pong .nc-loader-container {
+    width: 200px;
+    height: auto;
+}
+
+
+
+.nc-pong .nc-ping-pong-progress-bar {
+    animation: sideToside 2s ease-in-out infinite;
+    -webkit-animation: sideToside 2s ease-in-out .5s infinite;
+    background-color: #009845;
+    height: 2px;
+    position: absolute;
+    width: 50%;
+    bottom: 0px;
+}
+
+@keyframes sideToside {
+
+    0%, 100% {
+        transform: translateX(-30%);
+    }
+
+
+    50% {
+        transform: translateX(130%);
+    }
+}
